@@ -1,11 +1,11 @@
 var shopper = {
-    shopper ="casey",
-    Age = 24,
-    FoodColor: ["apple", "strawberry", "peach"],
-    LikesToShop: false,
-    varshopper: function(){
+    name: "casey chester",
+    age: 24,
+    foodColor: ["apple", "strawberry", "peach"],
+    likesToShop: false,
+    varShopper: function(){
+        return this.name + " " + this.age;
 
     }    
-}
-    var fruit = ["apple", "strawberry", "peach"]
-    console.log(shopper)
+};
+    console.log(shopper.varShopper());
