@@ -1,19 +1,19 @@
-var Car = []
-function Cars (year,make,price = "Car-prices"){
-    this.year = year;
-    this.make = make;
-    this.price = price
-    this.printCarDetails = () => {
-        console.log(this)
-    }
-    Car.push(this)
-
+var employee = []
+function Employees(name, title, salary, status = "full-time"){
+this.name = name;
+this.title = title;
+this.salary = salary;
+this.status = status;
+this.printEmployeeForm = function (){
+    console.log(this)
 }
-let batman = new Cars("2015","altima","15000")
-let catwoman = new Cars ("2016","toyota","20000")
-let superman = new Cars ("2018","lambo","300000" )
-console.log(Car)
+employee.push(this)
+}
 
-
-var myTacoma = new Cars(2015,"Toyota","1");
-myTacoma.printCarDetails();
+let casey = new Employees("Casey", "bakery", "10 / hr")
+let lea = new Employees("lea", "dollar tree", "7000")
+let shiloh = new Employees ("Shiloh", "web developer", "100000")
+console.log(employee)
+casey.printEmployeeForm()
+lea.printEmployeeForm()
+shiloh.printEmployeeForm()

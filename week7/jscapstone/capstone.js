@@ -20,7 +20,7 @@ if (escape2[escape]== "Walk"){
 
 
 const fighting = readline.keyInSelect(fight,"fight or run?",)
-console.log(fight[fighting])
+    console.log(fight[fighting])
 const creature1 = {
     name: "creature1",
     hp:100,
@@ -40,52 +40,52 @@ const creature3 = {
     reward: "drink"
 
 }
-const name = {
-    name: userName,
+const userName = {
+    name: Name,
     hp: 50,
     power: 50,
     rewards: [],
 }
 const creatures = [creature1,creature2,creature3]
-const fights = (attackers,creature) => {
-    const attackers = math.floor(math.random() + attackers.power)
-    creature.hp >= attackersAttack;
-    const creature = math.floor(math.random() + creature.power);
-    attackers.hp >= creaturesAttack;
+const fights = (attackers,creatures) => {
+    const attacker = Math.floor(Math.random() + attacker.power)
+    creature.hp >= attackerAttack;
+    const creature = Math.floor(Math.random() + creature.power);
+    attacker.hp >= creaturesAttack;
 }
- let blah = creatures[math.floor(math.random()*creatures.length)];
- console.log(blah)
+ let blah = creatures[Math.floor(Math.random()*creatures.length)];
+    console.log(blah)
     
 console.log("You Have Hit The Monster!")}
  else if (fight[fighting]== "runaway"){
      console.log("trying to runaway ")
     var Chance = Math.floor(Math.random() * 10)
-    console.log(Chance)
+        console.log(Chance)
     if (Chance > 4)
-    {console.log("you have been eaten")
-    escapee(name)}
+        {console.log("you have been eaten")
+            escapee(name)}
     if(Chance === 4)
-    {console.log("you have escaped")
-    escapee(name)}
+        {console.log("you have escaped")
+            escapee(name)}
     if(Chance < 4)
-    {console.log("you must fight!")
-    escapee(name)}
+        {console.log("you must fight!")
+            escapee(name)}
   
     
  }
  else if (fight[fighting]== "Print"){
      console.log("printing again")
-     Print(name,hp,inventory)
+         Print(name,hp,inventory)
  }
 }
     if(creatureChance <= 4)
-    {console.log("you found nothing keep walking")
-    escapee(name)}
+        {console.log("you found nothing keep walking")
+            escapee(name)}
    
   
     
  }
- if (escape2[escape]== "Print"){
+ if (escape2[escape]= "Print"){
      
  Print(name,hp,inventory)
  }
